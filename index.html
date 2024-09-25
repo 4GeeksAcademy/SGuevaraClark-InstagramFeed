@@ -9,35 +9,42 @@
 </head>
 <body>
 
-<!--Navbar-->
 
+<!--Navbar-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container">
-    <a class="navbar-brand" href="#">
-      <i class="fa-brands fa-instagram"></i>
-      Instagram
-    </a>
-    <div>
-      <button class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#createPostModal">Create a new post</button>
-      <div class="dropdown d-inline-block">
-        <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="settingsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-          <i class="fas fa-cog"></i>
-        </button>
-        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="settingsDropdown">
-          <li><a class="dropdown-item" href="#">Profile</a></li>
-          <li><a class="dropdown-item" href="#">Accessibility</a></li>
-          <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <i class="fa-brands fa-instagram"></i>
+        Instagram
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <button class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#createPostModal">Create a new post</button>
+          </li>
+          <li class="nav-item dropdown">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="settingsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-cog"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="settingsDropdown">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accessibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
-  </div>
-</nav>
+  </nav>
+  
+  <!--Termina navbar-->
 
-<!--Termina el navbar aquí-->
-
-<!--Modal pop up agregar imagénes que me faltan-->
+<!--Modal pop up -->
 <div class="modal fade" id="createPostModal" tabindex="-1" aria-labelledby="createPostModalLabel" aria-hidden="true">
   <div class="modal-dialog">
       <div class="modal-content">
@@ -89,15 +96,15 @@
     <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="grid" role="tabpanel" aria-labelledby="grid-tab">
             <div class="row g-2">
-                <div class="col-4"><img src="https://images.unsplash.com/photo-1579380231498-e45d45213373?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29zdGElMjByaWNhfGVufDB8MHwwfHx8MA%3D%3D" alt="Grid item 1" class="img-fluid instagram-item"></div>
-                <div class="col-4"><img src="https://images.unsplash.com/photo-1630488991068-d12e7e0dadb7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29zdGElMjByaWNhfGVufDB8MHwwfHx8MA%3D%3D" alt="Grid item 2" class="img-fluid instagram-item"></div>
-                <div class="col-4"><img src="https://images.unsplash.com/photo-1689794469712-b4e3a00f0209?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvc3RhJTIwcmljYXxlbnwwfDB8MHx8fDA%3D" alt="Grid item 3" class="img-fluid instagram-item"></div>
-                <div class="col-4"><img src="https://images.unsplash.com/photo-1611223156134-07ade11dfe6a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNvc3RhJTIwcmljYXxlbnwwfDB8MHx8fDA%3D" alt="Grid item 4" class="img-fluid instagram-item"></div>
-                <div class="col-4"><img src="https://images.unsplash.com/photo-1643400812282-4ef456a7b352?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNvc3RhJTIwcmljYXxlbnwwfDB8MHx8fDA%3D" alt="Grid item 5" class="img-fluid instagram-item"></div>
-                <div class="col-4"><img src="https://images.unsplash.com/photo-1547057231-e2c7dea46a7a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGNvc3RhJTIwcmljYXxlbnwwfDB8MHx8fDA%3D" alt="Grid item 6" class="img-fluid instagram-item"></div>
-                <div class="col-4"><img src="https://images.unsplash.com/photo-1597693253938-0ba06637f6e5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGNvc3RhJTIwcmljYXxlbnwwfDB8MHx8fDA%3D" alt="Grid item 7" class="img-fluid instagram-item"></div>
-                <div class="col-4"><img src="https://images.unsplash.com/photo-1643400814192-381f57499b42?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGNvc3RhJTIwcmljYXxlbnwwfDB8MHx8fDA%3D" alt="Grid item 8" class="img-fluid instagram-item"></div>
-                <div class="col-4"><img src="https://images.unsplash.com/photo-1691242559983-db4cb8415ee8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fGNvc3RhJTIwcmljYXxlbnwwfDB8MHx8fDA%3D" alt="Grid item 9" class="img-fluid instagram-item"></div>
+                <div class="col-12 col-md-6 col-lg-4"><img src="https://images.unsplash.com/photo-1579380231498-e45d45213373?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29zdGElMjByaWNhfGVufDB8MHwwfHx8MA%3D%3D" alt="Grid item 1" class="img-fluid instagram-item"></div>
+                <div class="col-12 col-md-6 col-lg-4"><img src="https://images.unsplash.com/photo-1630488991068-d12e7e0dadb7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29zdGElMjByaWNhfGVufDB8MHwwfHx8MA%3D%3D" alt="Grid item 2" class="img-fluid instagram-item"></div>
+                <div class="col-12 col-md-6 col-lg-4"><img src="https://images.unsplash.com/photo-1689794469712-b4e3a00f0209?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvc3RhJTIwcmljYXxlbnwwfDB8MHx8fDA%3D" alt="Grid item 3" class="img-fluid instagram-item"></div>
+                <div class="col-12 col-md-6 col-lg-4"><img src="https://images.unsplash.com/photo-1611223156134-07ade11dfe6a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNvc3RhJTIwcmljYXxlbnwwfDB8MHx8fDA%3D" alt="Grid item 4" class="img-fluid instagram-item"></div>
+                <div class="col-12 col-md-6 col-lg-4"><img src="https://images.unsplash.com/photo-1643400812282-4ef456a7b352?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNvc3RhJTIwcmljYXxlbnwwfDB8MHx8fDA%3D" alt="Grid item 5" class="img-fluid instagram-item"></div>
+                <div class="col-12 col-md-6 col-lg-4"><img src="https://images.unsplash.com/photo-1547057231-e2c7dea46a7a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGNvc3RhJTIwcmljYXxlbnwwfDB8MHx8fDA%3D" alt="Grid item 6" class="img-fluid instagram-item"></div>
+                <div class="col-12 col-md-6 col-lg-4"><img src="https://images.unsplash.com/photo-1597693253938-0ba06637f6e5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGNvc3RhJTIwcmljYXxlbnwwfDB8MHx8fDA%3D" alt="Grid item 7" class="img-fluid instagram-item"></div>
+                <div class="col-12 col-md-6 col-lg-4"><img src="https://images.unsplash.com/photo-1643400814192-381f57499b42?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGNvc3RhJTIwcmljYXxlbnwwfDB8MHx8fDA%3D" alt="Grid item 8" class="img-fluid instagram-item"></div>
+                <div class="col-12 col-md-6 col-lg-4"><img src="https://images.unsplash.com/photo-1691242559983-db4cb8415ee8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fGNvc3RhJTIwcmljYXxlbnwwfDB8MHx8fDA%3D" alt="Grid item 9" class="img-fluid instagram-item"></div>
             </div>
         </div>
         <div class="tab-pane fade" id="feed" role="tabpanel" aria-labelledby="feed-tab">
